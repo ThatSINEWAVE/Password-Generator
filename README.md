@@ -22,6 +22,8 @@ The application allows users to generate up to random passwords with various cus
 
 - `main.py`: Contains the main application code implemented using Tkinter for the GUI.
 - `utils.py`: Contains utility functions for generating passwords.
+- `settings.json`: Contains your saved settings.
+- `passowords.json`: Contains the generated passwords.
 
 ## Usage
 
@@ -45,3 +47,10 @@ To use the password generator:
 - Settings such as password length, inclusion of numbers, mixed case, symbols, and the number of passwords are saved to a `settings.json` file for future use.
 - Ensure to handle the saved passwords file securely as it contains sensitive information.
 
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
