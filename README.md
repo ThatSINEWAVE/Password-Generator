@@ -1,7 +1,11 @@
+<div align="center">
+
 # Password Generator
 
 This repository contains a simple password generator application implemented in Python using the CustomTkinter library for the graphical user interface.
 The application allows users to generate up to random passwords with various customizable options.
+
+</div>
 
 <div align="center">
 
@@ -17,6 +21,12 @@ The application allows users to generate up to random passwords with various cus
   - **Include Numbers**: Option to include numerical digits in the generated passwords.
   - **Mixed Case**: Option to include both uppercase and lowercase letters in the generated passwords.
   - **Include Symbols**: Option to include special symbols in the generated passwords.
+
+<div align="center">
+
+## ☕ [Support my work on Ko-Fi](https://ko-fi.com/thatsinewave)
+
+</div>
 
 ## Files
 
@@ -41,16 +51,28 @@ To use the password generator:
 - Python 3.x
 - CustomTkinter library
 
+<div align="center">
+
 ## Note
 
-- Generated passwords are saved to a file named `passwords.txt` in the same directory as the script.
-- Settings such as password length, inclusion of numbers, mixed case, symbols, and the number of passwords are saved to a `settings.json` file for future use.
-- Ensure to handle the saved passwords file securely as it contains sensitive information.
+Generated passwords are saved to a file named `passwords.txt` in the same directory as the script.
+Settings such as password length, inclusion of numbers, mixed case, symbols, and the number of passwords are saved to a `settings.json` file for future use.
+Ensure to handle the saved passwords file securely as it contains sensitive information.
+
+</div>
+
+<div align="center">
 
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
+</div>
+
+<div align="center">
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+</div>
