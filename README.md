@@ -40,10 +40,15 @@ The application allows users to generate up to random passwords with various cus
 To use the password generator:
 
 1. Run the `main.py` file.
+
 2. Adjust the desired options such as password length, inclusion of numbers, mixed case, and symbols.
+
 3. Click on the "Generate" button to generate passwords.
+
 4. Passwords will be saved to a file named `passwords.txt` in the same directory as the script.
+
 5. Additionally, users can save their settings by clicking on the "Save Settings" button.
+
 6. The "Choose Save Path" button allows users to select a custom directory to save the generated passwords.
 
 ## Requirements
