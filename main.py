@@ -15,7 +15,8 @@ def popup_invalid_length():
     message = "Password length must be\nbetween 8 and 64."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -55,7 +56,8 @@ def popup_no_length():
     message = "Please enter a password length."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -95,7 +97,8 @@ def popup_password_length():
     message = "Password length must be\nbetween 8 and 64."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -135,7 +138,8 @@ def popup_invalid_num_passwords():
     message = "Number of passwords must be\nbetween 1 and 4294967295."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -175,7 +179,8 @@ def popup_no_num_passwords():
     message = "Number of passwords must be\nbetween 1 and 4294967295."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -215,7 +220,8 @@ def popup_settings_saved():
     message = "Settings have been\nsaved successfully."
     root = customtkinter.CTkToplevel()
     root.geometry("250x120")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -259,7 +265,8 @@ def popup_passwords_generated(num_passwords, file_path):
     message = f"{num_passwords} passwords\nhave been generated and saved to\n{file_path}"
     root = customtkinter.CTkToplevel()
     root.geometry("400x140")
-    root.resizable(width=False, height=False)
+    root.resizable(width=False, 
+                   height=False)
     root.title(title)
     root.iconbitmap(APP_ICON)
     # Background frame
@@ -305,9 +312,12 @@ class PasswordGenerator(customtkinter.CTk):
         self.length_entry = None
         self.title("SINEWAVE's Password Generator")
         self.geometry("476x191")
-        self.resizable(width=False, height=False)
+        self.resizable(width=False, 
+                       height=False)
         self.iconbitmap(APP_ICON)
-        self.font = customtkinter.CTkFont(family="Arial", size=12, weight="normal")
+        self.font = customtkinter.CTkFont(family="Arial",
+                                          size=12,
+                                          weight="bold")
         self.tooltip_label = None
         customtkinter.set_appearance_mode("dark")
 
@@ -355,7 +365,8 @@ class PasswordGenerator(customtkinter.CTk):
         # Password Length entry field
         self.length_entry = customtkinter.CTkEntry(length_frame,
                                                    textvariable=self.length_var,
-                                                   width=76)
+                                                   width=76,
+                                                   justify='center')
         self.length_entry.place(x=160,
                                 y=11)
         self.length_var.trace_add("write", self.validate_length)
@@ -378,7 +389,8 @@ class PasswordGenerator(customtkinter.CTk):
         # Number of Passwords entry field
         self.num_passwords_entry = customtkinter.CTkEntry(num_passwords_frame,
                                                           textvariable=self.num_passwords_var,
-                                                          width=76)
+                                                          width=76,
+                                                          justify='center')
         self.num_passwords_entry.place(x=160,
                                        y=11)
         self.num_passwords_var.trace_add("write",
