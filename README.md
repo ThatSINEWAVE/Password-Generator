@@ -14,7 +14,6 @@ The application allows users to generate up to random passwords with various cus
 </div>
 
 ## Features
-
 - **Password Length**: Users can specify the length of the generated passwords (between 8 and 64 characters).
 - **Number of Passwords**: Users can specify the number of passwords to generate (up to 4,294,967,295 passwords)
 - **Options**:
@@ -56,28 +55,16 @@ To use the password generator:
 - Python 3.x
 - CustomTkinter library
 
-<div align="center">
-
 ## Note
 
 Generated passwords are saved to a file named `passwords.txt` in the same directory as the script.
 Settings such as password length, inclusion of numbers, mixed case, symbols, and the number of passwords are saved to a `settings.json` file for future use.
 Ensure to handle the saved passwords file securely as it contains sensitive information.
 
-</div>
-
-<div align="center">
-
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-</div>
-
-<div align="center">
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-</div>
