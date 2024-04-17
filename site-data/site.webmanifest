@@ -1,0 +1,41 @@
+{
+  "name": "Password Generator by SINEWAVE_",
+  "description": "Web application that helps you generate passwords",
+  "short_name": "Password Generator",
+  "start_url": "/",
+  "orientation": "portrait",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "site-data/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "site-data/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "site-data/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "site-data/screenshot-desktop-wide.png",
+      "sizes": "1529x957",
+      "type": "image/png",
+      "purpose": "any",
+      "form_factor": "wide"
+    },
+    {
+      "src": "site-data/screenshot-mobile.png",
+      "sizes": "484x870",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
