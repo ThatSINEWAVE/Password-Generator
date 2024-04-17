@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+        <div class="header-buttons">
+            <a href="https://github.com/ThatSINEWAVE/Password-Generator" target="_blank">GitHub</a>
+            <a href="https://ko-fi.com/thatsinewave">Support</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <label for="length">Password Length (8-64):</label>
+            <input type="number" id="length" min="8" max="64" value="8" style="width: 60px;">
+            <label for="numPasswords">Number of Passwords:</label>
+            <input type="number" id="numPasswords" min="1" max="4294967295" value="1" style="width: 60px;">
+            <div>
+                <input type="checkbox" id="includeNumbers" checked>
+                <label for="includeNumbers">Include Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeMixedCase" checked>
+                <label for="includeMixedCase">Mixed Case</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeSymbols">
+                <label for="includeSymbols">Include Symbols</label>
+            </div>
+            <button onclick="generatePasswords()" id="generateButton">Generate</button>
+            <button onclick="saveSettings()">Save Settings</button>
+            <button onclick="downloadPasswords()" id="downloadButton" disabled>Download Passwords</button>
+            <div id="output"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div>&copy; 2024 ThatSINEWAVE | Password Generator</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
