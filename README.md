@@ -2,7 +2,7 @@
 
 # [Password Generator](https://thatsinewave.github.io/Password-Generator)
 
-This repository contains a simple password generator application implemented in Python using the CustomTkinter library for the graphical user interface.
+This repository contains a simple password generator application implemented in Python using the CustomTkinter library for the graphical user interface as a script or directly in your browser.
 The application allows users to generate up to random passwords with various customizable options.
 
 </div>
