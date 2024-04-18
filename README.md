@@ -9,7 +9,13 @@ The application allows users to generate up to random passwords with various cus
 
 <div align="center">
 
-![Password-Generator](https://github.com/ThatSINEWAVE/Password-Generator/assets/133239148/4136f56d-2c08-4acb-8d8b-f377d69a982f)
+**Script Interface**
+
+![Password-Generator GUI](https://github.com/ThatSINEWAVE/Password-Generator/assets/133239148/4136f56d-2c08-4acb-8d8b-f377d69a982f)
+
+**Web Inteface**
+
+![Password Generator WEB](https://github.com/ThatSINEWAVE/Password-Generator/assets/133239148/c1fd59d5-7f46-4c76-afd0-9a9cea9d8748)
 
 </div>
 
