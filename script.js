@@ -24,17 +24,49 @@ function generatePasswords() {
         return;
     }
 
-    const passwords = [];
-    for (let i = 0; i < numPasswords; i++) {
-        passwords.push(generatePassword(length, includeNumbers, includeMixedCase, includeSymbols));
-    }
+    const passwords = generatePasswordChunks(numPasswords, length, includeNumbers, includeMixedCase, includeSymbols);
 
     outputDiv.innerHTML = `<p>Generated Passwords:</p><textarea rows="10" cols="30" readonly>${passwords.join('\n')}</textarea>`;
     downloadButton.disabled = false;
 }
 
-// Generate a single password
-function generatePassword(length, includeNumbers, includeMixedCase, includeSymbols) {
+// Generate password chunks
+function generatePasswordChunks(numPasswords, length, includeNumbers, includeMixedCase, includeSymbols) {
+    const chunkSize = 10000;
+    const passwordChunks = [];
+    const characters = generateCharacters(includeNumbers, includeMixedCase, includeSymbols);
+
+    for (let i = 0; i < numPasswords; i += chunkSize) {
+        const chunkEnd = Math.min(i + chunkSize, numPasswords);
+        const chunkPasswords = generatePasswordChunk(chunkEnd - i, length, characters);
+        passwordChunks.push(...chunkPasswords);
+    }
+
+    return passwordChunks;
+}
+
+// Generate a chunk of passwords
+function generatePasswordChunk(chunkSize, length, characters) {
+    const chunkPasswords = [];
+    const charLength = characters.length;
+
+    for (let i = 0; i < chunkSize; i++) {
+        let password = '';
+        const randomValues = new Uint8Array(length);
+        crypto.getRandomValues(randomValues);
+
+        for (let j = 0; j < length; j++) {
+            password += characters[randomValues[j] % charLength];
+        }
+
+        chunkPasswords.push(password);
+    }
+
+    return chunkPasswords;
+}
+
+// Generate character set
+function generateCharacters(includeNumbers, includeMixedCase, includeSymbols) {
     let characters = 'abcdefghijklmnopqrstuvwxyz';
     if (includeMixedCase) {
         characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -45,12 +77,7 @@ function generatePassword(length, includeNumbers, includeMixedCase, includeSymbo
     if (includeSymbols) {
         characters += '!@#$%^&*()_+~`|}{[]:;?><,./-=';
     }
-
-    let password = '';
-    for (let i = 0; i < length; i++) {
-        password += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return password;
+    return characters;
 }
 
 // Save settings function
