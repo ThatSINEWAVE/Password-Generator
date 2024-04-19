@@ -85,14 +85,18 @@ label {
 input[type="number"] {
     padding: 0.5rem;
     border: 1px solid #ccc;
+    background-color: #3c3c3c;
     border-radius: 3px;
     margin-left: 0.5rem;
     margin-bottom: 1rem;
+    border: none;
+    color: #ddd;
 }
 
 input[type="checkbox"] {
     margin-right: 0.5rem;
     vertical-align: middle;
+    accent-color: #950101;
 }
 
 .input-group {
@@ -191,3 +195,4 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
