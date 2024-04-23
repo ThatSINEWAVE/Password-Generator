@@ -40,6 +40,12 @@ The application allows users to generate up to random passwords with various cus
 - `settings.json`: Contains your saved settings.
 - `passowords.json`: Contains the generated passwords.
 
+<div align="center">
+
+# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+
+</div>
+
 ## Usage
 
 To use the password generator:
