@@ -2,7 +2,7 @@
   "name": "Password Generator by SINEWAVE_",
   "description": "Web application that helps you generate passwords",
   "short_name": "Password Generator",
-  "start_url": "/",
+  "start_url": "/Password-Generator",
   "orientation": "portrait",
   "lang": "en-US",
   "icons": [
