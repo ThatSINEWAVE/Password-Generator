@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
@@ -11,48 +11,48 @@
     <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
     <link rel="manifest" href="site-data/site.webmanifest">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Password Generator</h1>
-        <div class="header-buttons">
-          <a href="https://github.com/ThatSINEWAVE/Discord-Identity" target="_blank" class="btn btn-header">
-            <i class="fab fa-github"></i> GitHub </a>
-          <a href="https://ko-fi.com/thatsinewave" target="_blank" class="btn btn-header">
-            <i class="fas fa-heart"></i> Support </a>
-          <a href="https://discord.gg/2nHHHBWNDw" class="btn" target="_blank">
-            <i class="fab fa-discord"></i> Discord</a>
-        </div>
+      <h1>Password Generator</h1>
+      <div class="header-buttons">
+        <a href="https://github.com/ThatSINEWAVE/Discord-Identity" target="_blank" class="btn btn-header">
+          <i class="fab fa-github"></i> GitHub </a>
+        <a href="https://ko-fi.com/thatsinewave" target="_blank" class="btn btn-header">
+          <i class="fas fa-heart"></i> Support </a>
+        <a href="https://discord.gg/2nHHHBWNDw" class="btn" target="_blank">
+          <i class="fab fa-discord"></i> Discord </a>
+      </div>
     </header>
     <main>
-        <div class="container">
-            <label for="length">Password Length (8-64):</label>
-            <input type="number" id="length" min="8" max="64" value="8" style="width: 60px;">
-            <label for="numPasswords">Number of Passwords:</label>
-            <input type="number" id="numPasswords" min="1" max="4294967295" value="1" style="width: 60px;">
-            <div>
-                <input type="checkbox" id="includeNumbers" checked>
-                <label for="includeNumbers">Include Numbers</label>
-            </div>
-            <div>
-                <input type="checkbox" id="includeMixedCase" checked>
-                <label for="includeMixedCase">Mixed Case</label>
-            </div>
-            <div>
-                <input type="checkbox" id="includeSymbols">
-                <label for="includeSymbols">Include Symbols</label>
-            </div>
-            <button onclick="generatePasswords()" id="generateButton">Generate</button>
-            <button onclick="saveSettings()">Save Settings</button>
-            <button onclick="downloadPasswords()" id="downloadButton" disabled>Download Passwords</button>
-            <div id="output"></div>
+      <div class="container">
+        <label for="length">Password Length (8-64):</label>
+        <input type="number" id="length" min="8" max="64" value="8" style="width: 60px;">
+        <label for="numPasswords">Number of Passwords:</label>
+        <input type="number" id="numPasswords" min="1" max="4294967295" value="1" style="width: 60px;">
+        <div>
+          <input type="checkbox" id="includeNumbers" checked>
+          <label for="includeNumbers">Include Numbers</label>
         </div>
+        <div>
+          <input type="checkbox" id="includeMixedCase" checked>
+          <label for="includeMixedCase">Mixed Case</label>
+        </div>
+        <div>
+          <input type="checkbox" id="includeSymbols">
+          <label for="includeSymbols">Include Symbols</label>
+        </div>
+        <button onclick="generatePasswords()" id="generateButton">Generate</button>
+        <button onclick="saveSettings()">Save Settings</button>
+        <button onclick="downloadPasswords()" id="downloadButton" disabled>Download Passwords</button>
+        <div id="output"></div>
+      </div>
     </main>
     <footer>
-        <div class="footer-content">
-            <div>MIT LICENSE &copy; 2024 - ThatSINEWAVE</div>
-        </div>
+      <div class="footer-content">
+        <div>MIT LICENSE &copy; 2024 - ThatSINEWAVE</div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
